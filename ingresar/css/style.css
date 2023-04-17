@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+  margin: 0;    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "mi letra";
+}
+
+
+/* header- icons y letras*/
+.header {
+    background-color: rgb(238, 167, 246);
+    display: flex;
+    font-size: 20px;
+    justify-content:space-between;
+}
+
+.icons {
+    max-width: 3%;
+    margin-left: 15px;
+}
+
+@font-face {
+    font-family: "mi letra";
+    src: url(../assets/fuente/Arturo-ExtraLight\ Trial.ttf);
+}
+
+/* boton login */
+.login{
+   border: 5px double black;
+   border-radius: 10px;
+   box-shadow: 3px 3px;
+   padding: 5px;
+  cursor: pointer;
+  background-color:rgba(238, 130, 238, 0.5);
+}
+
+@media (max-width: 700px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+
+    }
+    .icons{
+        max-width: 10%;
+    }  
+}
+
+
+/* container de navegacion */
+.container {
+    background: repeating-linear-gradient(
+      190deg,
+      rgba(255, 0, 0, 0.5) 40px,
+      rgba(255, 153, 0, 0.5) 80px,
+      rgba(255, 255, 0, 0.5) 120px,
+      rgba(0, 255, 0, 0.5) 160px,
+      rgba(0, 0, 255, 0.5) 200px,
+      rgba(75, 0, 130, 0.5) 240px,
+      rgba(238, 130, 238, 0.5) 280px,
+      rgba(255, 0, 0, 0.5) 300px
+    );
+       display: flex;
+     justify-content: flex-start;
+     flex-direction:row;
+     align-items: flex-start;  
+} 
+      
+.navegacion {
+    background-color: rgba(0, 0, 0, .30 );
+    border-radius: 30px;
+    color: aliceblue;
+    padding: 20px;
+    font-size: 30px;
+    list-style-type: none;
+    min-height: 90vh;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: space-evenly;
+  
+} 
+
+/* lista de palabras en navegar */
+.navegar {
+    text-decoration: none;
+    color: white;   
+}
+
+.navegar:hover{
+    background-color: black;
+    color: red;
+}
+
+@media (max-width: 600px) {
+    .container-navee{
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     align-items: center;
+    }     
+    .navegar{
+        font-size: 20px;
+        color: black;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        align-items: flex-start;
+    }
+
+    .navegacion{
+        text-align: center;
+        min-width: 100vw;
+        min-height: 30vh;
+    }
+}
+
+
+/* container de peliculas */
+
+.container-2 {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-evenly;
+     flex-grow: 1;
+}
+
+/* estilo de peliculas */
+.movies { 
+    max-width: 100%;
+    padding: 20px;
+    cursor: pointer; 
+    margin-left: 10px;
+}
+
+.movies:hover{
+    background-color: black;
+    transform: scale(1.1); 
+}
+
+@media (max-width: 600px) {
+    .container-2{
+        display: flex;
+        flex-flow: row wrap;
+        flex: 0 0 100%;
+        margin-top: 70%;
+        margin-left: -100%; 
+    }
+    .movies{
+        max-width: 39%;
+
+    }
+}
+
+
+/* contenedor footer */
+.footer {
+    background-color: rgb(238, 167, 246);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+/* cupones y tamaño de redes */
+.redes-1, 
+.redes-2,
+.redes{
+    max-width: 15%;
+}
+
+/* iconos de redes sociales */
+.redes {
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .redes{
+        max-width: 30%;
+    }  
+    .redes-1{
+        max-width: 30%;
+    } 
+    .redes-2{
+        max-width: 30%;
+    } 
+
+
+}
